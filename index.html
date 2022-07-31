@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Calculadora científica básica</title>        	
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    
+  </head
+ <body>
+    <table id="calculadora">
+        <tr>
+            <td colspan="4">
+                <input type="text" id="valor_numero" maxlength="20" value="0" class="cajita_valor" readonly="true">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="Button" id="Happy-Face" value=":)" class="boton funcion" onclick="operar(11)">
+            </td>
+            <td>
+                <input type="Button" id="Reciproco" value="1/x" class="boton funcion" onclick="operar(12)">
+            </td>
+            <td>
+                <input type="Button" id="Factorial" value="x!" class="boton funcion" onclick="operar(13)">
+            </td>
+            <td>
+                <input type="Button" id="Logartimo-natural" value="ln" class="boton funcion" onclick="operar(14)">
+            </td>
+        </tr>
+         <tr>
+            <td>
+                <input type="Button" id="Seno" value="sin" class="boton funcion" onclick="operar(7)">
+            </td>
+            <td>
+                <input type="Button" id="Coseno" value="cos" class="boton funcion" onclick="operar(8)">
+            </td>
+            <td>
+                <input type="Button" id="Tangente" value="tan" class="boton funcion" onclick="operar(9)">
+            </td>
+            <td>
+                <input type="Button" id="Logartimo-base10" value="log" class="boton funcion" onclick="operar(10)">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="Button" id="Dividir" value="/" class="boton funcion" onclick="operar(4)">
+            </td>
+            <td>
+                <input type="Button" id="Multiplicar" value="x" class="boton funcion" onclick="operar(3)">
+            </td>
+            <td>
+                <input type="Button" id="Potencia" value="^" class="boton funcion" onclick="operar(5)">
+            </td>
+            <td>
+                <input type="Button" id="Raiz" value="√" class="boton funcion" onclick="operar(6)">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="Button" id="7" value="7" class="boton" onclick="darNumero('7')">
+            </td>
+            <td>
+                <input type="Button" id="8" value="8" class="boton" onclick="darNumero('8')">
+            </td>
+            <td>
+                <input type="Button" id="9" value="9" class="boton" onclick="darNumero('9')">
+            </td>
+            <td>
+                <input type="Button" id="Restar" value="-" class="boton funcion" onclick="operar(2)">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="Button" id="4" value="4" class="boton" onclick="darNumero('4')">
+            </td>
+            <td>
+                <input type="Button" id="5" value="5" class="boton" onclick="darNumero('5')">
+            </td>
+            <td>
+                <input type="Button" id="6" value="6" class="boton" onclick="darNumero('6')">
+            </td>
+    		<td>
+    			<input type="Button" id="Sumar" value="+" class="boton funcion" onclick="operar(1)">
+    		</td>
+        </tr>
+        <tr>
+            <td>
+                <input type="Button" id="1" value="1" class="boton" onclick="darNumero('1')">
+            </td>
+            <td>
+                <input type="Button" id="2" value="2" class="boton" onclick="darNumero('2')">
+            </td>
+            <td>
+                <input type="Button" id="3" value="3" class="boton" onclick="darNumero('3')">
+            </td>
+            <td>
+                <input type="Button" id="igual" value="=" class="boton funcion" onclick="esIgual()">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input type="Button" id="0" value="0" class="boton_largo" onclick="darNumero('0')">
+            </td>
+	    <td>
+                <input type="Button" id="," value="," class="boton" onclick="darComa()">
+            </td>
+    	    <td>
+    		<input type="Button" id="C" value="C" class="boton funcion" onclick="darC()">
+    	    </td>
+        </tr>
+    </table>
+    <script src="script.js"></script>
+    </body>
+</html>
